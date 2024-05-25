@@ -6,8 +6,6 @@ st.title("Image classifier 9000")
 
 #decorator thing?
 @st.cache_resource
-
-
 def load_model():
     mod = YOLO("best.pt")
     return mod
