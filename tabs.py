@@ -89,6 +89,6 @@ with tab4:
         st.image(img)
         mod1 = load_model()
         res = mod1.predict(img)
-        pred = res[0].probes.top1
+        pred = res[0].probs.top1
         st.write(res[0].names[pred])
 
