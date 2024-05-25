@@ -6,7 +6,7 @@ import numpy as np
 
 
 st.set_page_config(layout="wide")
-tab1, tab2, tab3, tab4 = st.tabs(["Introduction", "Implementation", "Pros VS Cons", "The ML"])
+tab1, tab2, tab3, tab4 = st.tabs(["Introduction", "Implementation", "Pros VS Cons", "Understand the ML"])
 with st.sidebar:
     st.title("To learn more and help the cause")
     st.link_button("Donate to the Environmental \n Defense Fund", "https://www.edf.org/")
