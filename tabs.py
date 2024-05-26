@@ -44,7 +44,7 @@ with tab1:
 
 with tab2:
     st.title("The way we understand carbon credits has changed over the years")
-    st.subheader("Carbon sequestration (per unit time by a average healthy tree) is not bound by a single formula, hence we"
+    st.subheader("Carbon sequestration (per unit time by an average healthy tree) is not bound by a single formula, hence we"
                  "have to follow various steps to find this value")
     st.divider()
     st.caption("First, we have to calculate the below-ground-biomass, or 'BGB', "
@@ -63,8 +63,8 @@ with tab2:
 with tab3:
     st.title("Global Ozone Depletion")
     st.subheader("This table shows the raze of ozone depletion")
-    st.caption("The highlighted values show the pain in my soul")
-    df = pd.DataFrame(np.random.randn(10, 20), columns=("col %d" % i for i in range(20)))
+    st.caption("The highlighted values demonstrate the areas of highest ozone effect")
+    df = pd.DataFrame(np.random.randn(10, 20), columns=("Sector %d" % i for i in range(20)))
 
 
     st.dataframe(df.style.highlight_max(axis=0))
