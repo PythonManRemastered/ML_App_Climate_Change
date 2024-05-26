@@ -43,7 +43,7 @@ with tab1:
 
 
 with tab2:
-    st.title("The way we understand carbon credits has changed over the years")
+    st.title("The way we understand carbon credits has changed over the months")
     st.subheader("Carbon sequestration (per unit time by an average healthy tree) is not bound by a single formula, hence we"
                  "have to follow various steps to find this value")
     st.divider()
