@@ -56,9 +56,9 @@ with tab2:
     st.divider()
     st.subheader("What is stratopheric ozone?")
     st.markdown("""
-                - The atmosphere is divided into several layers; The two we will discuss here are: the Troposphere, and the Stratosphere 
-                - Tropospheric ozone is primarily caused by car exhaust emissions during traffic, which produce nitrogen oxides. The development of tropospheric ozone is hazardous to humans 
-                - Stratospheric ozone is naturally produced when solar radiation breaks down oxygen molecules in the atmosphere. Stratospheric ozone protects us from UV radiation and makes the Earth habitable 
+                - The atmosphere is divided into several layers; The two we will discuss here are: **the Troposphere, and the Stratosphere**
+                - Tropospheric ozone is primarily caused by car exhaust emissions during traffic, which produce nitrogen oxides. **The development of tropospheric ozone is hazardous to humans** 
+                - Stratospheric ozone is naturally produced when solar radiation breaks down oxygen molecules in the atmosphere. **Stratospheric ozone protects us from UV radiation, and makes the Earth habitable** 
                 """                
 
 )
@@ -99,7 +99,7 @@ with tab4:
     expander = st.expander("See explanation")
     expander.write('''
         The chart above shows some numbers I picked for you.
-        I rolled actual dice for these, so they're **guaranteed** to
+        I rolled actual dice for these, so they're *guaranteed* to
         be random.
     ''')
     expander.image("https://static.streamlit.io/examples/dice.jpg")
