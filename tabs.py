@@ -63,7 +63,15 @@ with tab2:
 
 )
     st.image('https://media.geeksforgeeks.org/wp-content/uploads/20240221152225/Ozone-Layer-depletion.png')
-    
+    page_bg_img = '''
+    <style>
+    .stApp {
+    background-image: url("https://www.shutterstock.com/shutterstock/photos/2128959116/display_1500/stock-vector-abstract-waving-particle-technology-background-design-abstract-wave-moving-dots-flow-particles-hi-2128959116.jpg");
+    background-size: cover;
+    }
+    </style>
+    '''
+    st.markdown(page_bg_img, unsafe_allow_html=True)
 
 with tab3:
     st.title("The way we understand carbon credits has changed over the years")
