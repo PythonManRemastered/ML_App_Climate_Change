@@ -62,7 +62,7 @@ with tab2:
 
 with tab3:
     st.title("Global Ozone Depletion")
-    st.subheader("This table shows the raze of ozone depletion")
+    st.subheader("This table shows the rate of ozone depletion")
     st.caption("The highlighted values demonstrate the areas of highest ozone effect")
     df = pd.DataFrame(np.random.randn(10, 20), columns=("Sector %d" % i for i in range(20)))
 
