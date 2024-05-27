@@ -46,7 +46,7 @@ with tab2:
     st.title("Into the Stratosphere: Exploring Ozone Depletion and Atmospheric Dynamics")
     st.subheader("What is stratopheric ozone?")
     st.markdown("" <style>
-                <b> Hello World </b> 
+                <strong>This text is important!</strong>
                 </style>"", unsafe_HTML_allow = True)
                 
     
