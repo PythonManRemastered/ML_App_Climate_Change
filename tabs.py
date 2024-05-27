@@ -110,7 +110,7 @@ with tab4:
     The graph above shows an increase in the rate of ozone depletion in the past few years.
     ''')
     expander.write("On the other hand, various sources, notably NASA and 'The World Economic Forum', contrast this, showing that ** the rate of ozone depletion has indeed continued to shrink since the introduction of the Montreal Protocol **")
-    expander.image("")
+
     
 
 
