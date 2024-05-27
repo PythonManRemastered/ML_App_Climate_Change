@@ -46,13 +46,10 @@ with tab2:
     st.title("Into the Stratosphere: Exploring Ozone Depletion and Atmospheric Dynamics")
     st.subheader("What is stratopheric ozone?")
     st.markdown("""
-            <style>
                 - The atmosphere is divided into several layers; The two we will discuss here are: <b> the Troposphere, and the Stratosphere </b>
                 - Tropospheric ozone is primarily caused by car exhaust emissions during traffic, which produce nitrogen oxides. <b> The development of tropospheric ozone is hzardous to humans </b>
                 - Stratospheric ozone is naturally produced when solar radiation breaks down oxygen molecules in the atmosphere. <b> Stratospheric ozone protects us from UV radiation and makes the Earth habitable </b>
-            </style>
-                """, unsafe_allow_html= True
-                
+                """                
             
 )
     
@@ -91,7 +88,7 @@ with tab4:
     st.map(df)
 
 with tab5:
-    st.title("Undestand how AI sees the world around us")
+    st.title("Understand how AI sees the world around us")
     @st.cache_resource
     def load_model():
         mod = YOLO("best.pt")
