@@ -102,11 +102,16 @@ with tab4:
     st.image('https://img.theweek.in/content/dam/week/news/2022/images/2022/12/21/Earth-ozone-hole-each-year-in-1979-(L)-and-in-2009.jpg')
     expander = st.expander("See what this means")
     expander.write('''
-        The chart above shows some numbers I picked for you.
-        I rolled actual dice for these, so they're *guaranteed* to
-        be random.
+    Despite the Montreal Protocol's success in regulating ozone-depleting chemicals,
+    the study raises concerns about the misperception that the ozone issue 
+    has been resolved. While the protocol has improved the situation with CFCs,
+    the ozone hole has reached record sizes in the past three years, 
+    covering over 26 million square kilometres in 2023, nearly twice the area of Antarctica.
+    The graph above shows an increase in the rate of ozone depletion in the past few years.
     ''')
-    expander.image("https://static.streamlit.io/examples/dice.jpg")
+    expander.divide()
+    expander.write("On the other hand, various sources, notably NASA and 'The World Economic Forum', contrast this, showing that ** the rate of ozone depletion has indeed continued to shrink since the introduction of the Montreal Protocol **")
+    expander.image("")
     
 
 
