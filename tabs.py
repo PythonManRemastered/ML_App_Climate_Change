@@ -83,7 +83,7 @@ with tab3:
     
 
 with tab4:
-    st.title("Global Ozone Depletion")
+    st.title("Some real examples behind Ozone Depletion")
     st.subheader("This table shows the rate of ozone depletion by sector in San Francisco")
     st.caption("The highlighted values demonstrate the areas of highest stratospheric ozone effect")
     
