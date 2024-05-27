@@ -52,6 +52,7 @@ with tab2:
                 """                
 
 )
+    st.image('https://media.geeksforgeeks.org/wp-content/uploads/20240221152225/Ozone-Layer-depletion.png')
     
 
 with tab3:
