@@ -43,7 +43,7 @@ with tab1:
     st.divider()
 
 with tab2:
-    st.title("Into the Stratosphere: Exploring Ozone Depletion and Atmospheric Dynamics"
+    st.title("Into the Stratosphere: Exploring Ozone Depletion and Atmospheric Dynamics")
     st.subheader("What is stratopheric ozone?")
     st.markdown("""
             <style>
