@@ -113,8 +113,8 @@ with tab5:
     The graph above shows an increase in the rate of ozone depletion in the past few years.
     ''')
     expander.write("On the other hand, various sources, notably NASA and 'The World Economic Forum', contrast this, showing that **the rate of ozone depletion has indeed continued to shrink since the introduction of the Montreal Protocol**")
-    expander.write("""Several other protocols have also been put into place to combat climate emissions, notably: The Kyoto Protocol (and the Doha amendment), the Clean Air Act,
-                   and the Clean Water Act
+    expander.write("""Several other protocols have also been put into place to combat climate emissions, notably: **The Kyoto Protocol (and the Doha amendment), the Clean Air Act,
+                   and the Clean Water Act**
                    """)
 
 
