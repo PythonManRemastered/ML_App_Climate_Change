@@ -7,7 +7,7 @@ from PIL import Image
 
 
 st.set_page_config(layout="wide")
-tab1, tab2, tab3, tab4 = st.tabs(["Introduction", "Implementation", "Pros VS Cons", "Understand the ML"])
+tab1, tab2, tab3, tab4, tab5= st.tabs(["Carbon Credits", "Ozone Depletion", "Implementation", "Pros VS Cons", "Understand the ML"])
 with st.sidebar:
     st.title("To learn more and help the cause")
     st.link_button("Donate to the Environmental \n Defense Fund", "https://www.edf.org/")
@@ -40,9 +40,24 @@ with tab1:
     col1.metric(label="Average Sufrace Temperature", value = "70 °F", delta = "12% increase from 1980")
     col2.metric(label="Sea Level", value = "10 cm", delta = "3cm increase from 1980")
     col3.metric(label="Use of Fossil Fuels", value = "178 billion gallons", delta = "7.8% increase from 1980 ")
-
+    st.divider()
 
 with tab2:
+    st.title("Into the Stratosphere: Exploring Ozone Depletion and Atmospheric Dynamics"
+    st.subheader("What is stratopheric ozone?")
+    st.markdown("""
+            <style>
+                - The atmosphere is divided into several layers; The two we will discuss here are: <b> the Troposphere, and the Stratosphere </b>
+                - Tropospheric ozone is primarily caused by car exhaust emissions during traffic, which produce nitrogen oxides. <b> The development of tropospheric ozone is hzardous to humans </b>
+                - Stratospheric ozone is naturally produced when solar radiation breaks down oxygen molecules in the atmosphere. <b> Stratospheric ozone protects us from UV radiation and makes the Earth habitable </b>
+            </style>
+                """, unsafe_allow_html= True
+                
+            
+)
+    
+
+with tab3:
     st.title("The way we understand carbon credits has changed over the years")
     st.subheader("Carbon sequestration (per unit time by an average healthy tree) is not bound by a single formula, hence we"
                  "have to follow various steps to find this value")
@@ -60,10 +75,10 @@ with tab2:
     st.divider()
     
 
-with tab3:
+with tab4:
     st.title("Global Ozone Depletion")
     st.subheader("This table shows the rate of ozone depletion")
-    st.caption("The highlighted values demonstrate the areas of highest ozone effect")
+    st.caption("The highlighted values demonstrate the areas of highest stratospheric ozone effect")
     df = pd.DataFrame(np.random.randn(10, 20), columns=("Sector %d" % i for i in range(20)))
 
 
@@ -75,8 +90,8 @@ with tab3:
 
     st.map(df)
 
-with tab4:
-    st.title("Image classifier 9000")
+with tab5:
+    st.title("Undestand how AI sees the world around us")
     @st.cache_resource
     def load_model():
         mod = YOLO("best.pt")
