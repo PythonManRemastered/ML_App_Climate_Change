@@ -7,7 +7,7 @@ from PIL import Image
 
 
 st.set_page_config(layout="wide")
-tab1, tab2, tab3, tab4, tab5, tab6= st.tabs(["Carbon Credits", "Ozone Depletion", "Implementation", "Effects IRL", "Government Protocols", "Understand the ML"])
+tab1, tab2, tab3, tab4, tab5, tab6= st.tabs(["Carbon Credits", "Ozone Depletion", "Implementation", "Government Protocols", "Effects IRL", "Understand the ML"])
 with st.sidebar:
     st.title("To learn more and help the cause")
     st.link_button("Donate to the Environmental \n Defense Fund", "https://www.edf.org/")
@@ -80,9 +80,12 @@ with tab3:
     ''')
     st.image('https://carbonneutral.com.au/wp-content/uploads/2022/04/sequestration-age-graph-1024x939.png')
     st.divider()
-    
 
 with tab4:
+    st.title("Hola!")
+    
+
+with tab5:
     st.title("Some real examples behind Ozone Depletion")
     st.subheader("This table shows the rate of ozone depletion by sector in San Francisco")
     st.caption("The highlighted values demonstrate the areas of highest stratospheric ozone effect")
@@ -111,12 +114,7 @@ with tab4:
     ''')
     expander.write("On the other hand, various sources, notably NASA and 'The World Economic Forum', contrast this, showing that **the rate of ozone depletion has indeed continued to shrink since the introduction of the Montreal Protocol**")
 
-    
 
-
-with tab5:
-    st.title("Hola!")
-    
 
 with tab6:
     st.title("Understand how AI sees the world around us")
