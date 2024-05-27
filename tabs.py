@@ -94,8 +94,10 @@ with tab4:
     df = pd.DataFrame(
         np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
         columns=['lat', 'lon'])
-    st.bar_chart({"data": [1, 5, 2, 6, 2, 1]})
-
+    
+    chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
+    st.map(df)
+    
     expander = st.expander("See explanation")
     expander.write('''
         The chart above shows some numbers I picked for you.
@@ -103,8 +105,8 @@ with tab4:
         be random.
     ''')
     expander.image("https://static.streamlit.io/examples/dice.jpg")
+    
 
-    st.map(df)
 
 with tab5:
     st.title("Hola!")
