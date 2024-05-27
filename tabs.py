@@ -109,7 +109,7 @@ with tab4:
     covering over 26 million square kilometres in 2023, nearly twice the area of Antarctica.
     The graph above shows an increase in the rate of ozone depletion in the past few years.
     ''')
-    expander.write("On the other hand, various sources, notably NASA and 'The World Economic Forum', contrast this, showing that ** the rate of ozone depletion has indeed continued to shrink since the introduction of the Montreal Protocol **")
+    expander.write("On the other hand, various sources, notably NASA and 'The World Economic Forum', contrast this, showing that **the rate of ozone depletion has indeed continued to shrink since the introduction of the Montreal Protocol**")
 
     
 
