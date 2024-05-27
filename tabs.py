@@ -41,17 +41,15 @@ with tab1:
     col2.metric(label="Sea Level", value = "10 cm", delta = "3cm increase from 1980")
     col3.metric(label="Use of Fossil Fuels", value = "178 billion gallons", delta = "7.8% increase from 1980 ")
     st.divider()
-    st.markdown(
-    f"""
+    page_bg_img = '''
     <style>
-    .stApp {
-        background-image: url(https://www.example.com/background.jpg);
-        background-size: cover;
+    body {
+    background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+    background-size: cover;
     }
     </style>
-    """,
-    unsafe_allow_html=True
-    )
+    '''
+    st.markdown(page_bg_img, unsafe_allow_html=True)
 
 with tab2:
     st.title("Into the Stratosphere: Exploring Ozone Depletion and Atmospheric Dynamics")
