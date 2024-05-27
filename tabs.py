@@ -41,9 +41,21 @@ with tab1:
     col2.metric(label="Sea Level", value = "10 cm", delta = "3cm increase from 1980")
     col3.metric(label="Use of Fossil Fuels", value = "178 billion gallons", delta = "7.8% increase from 1980 ")
     st.divider()
+    st.markdown(
+    f"""
+    <style>
+    .stApp {
+        background-image: url(https://www.example.com/background.jpg);
+        background-size: cover;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+    )
 
 with tab2:
     st.title("Into the Stratosphere: Exploring Ozone Depletion and Atmospheric Dynamics")
+    st.divider()
     st.subheader("What is stratopheric ozone?")
     st.markdown("""
                 - The atmosphere is divided into several layers; The two we will discuss here are: the Troposphere, and the Stratosphere 
