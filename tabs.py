@@ -98,7 +98,9 @@ with tab4:
     st.map(df)
 
     st.divider()
-    expander = st.expander("See explanation")
+    st.subheader("Ozone depletion in the Antarctic stratosphere over the past 3 years")
+    st.image('https://img.theweek.in/content/dam/week/news/2022/images/2022/12/21/Earth-ozone-hole-each-year-in-1979-(L)-and-in-2009.jpg')
+    expander = st.expander("See what this means")
     expander.write('''
         The chart above shows some numbers I picked for you.
         I rolled actual dice for these, so they're *guaranteed* to
