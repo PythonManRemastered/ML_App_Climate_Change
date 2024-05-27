@@ -7,7 +7,7 @@ from PIL import Image
 
 
 st.set_page_config(layout="wide")
-tab1, tab2, tab3, tab4, tab5= st.tabs(["Carbon Credits", "Ozone Depletion", "Implementation", "Pros VS Cons", "Understand the ML"])
+tab1, tab2, tab3, tab4, tab5, tab6= st.tabs(["Carbon Credits", "Ozone Depletion", "Implementation", "In Real Life", "Government Use and Mitigation", "Understand the ML"])
 with st.sidebar:
     st.title("To learn more and help the cause")
     st.link_button("Donate to the Environmental \n Defense Fund", "https://www.edf.org/")
@@ -94,10 +94,22 @@ with tab4:
     df = pd.DataFrame(
         np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
         columns=['lat', 'lon'])
+    st.bar_chart({"data": [1, 5, 2, 6, 2, 1]})
+
+    expander = st.expander("See explanation")
+    expander.write('''
+        The chart above shows some numbers I picked for you.
+        I rolled actual dice for these, so they're *guaranteed* to
+        be random.
+    ''')
+    expander.image("https://static.streamlit.io/examples/dice.jpg")
 
     st.map(df)
 
 with tab5:
+    
+
+with tab6:
     st.title("Understand how AI sees the world around us")
     @st.cache_resource
     def load_model():
