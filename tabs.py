@@ -84,20 +84,20 @@ with tab3:
 
 with tab4:
     st.title("Global Ozone Depletion")
-    st.subheader("This table shows the rate of ozone depletion")
+    st.subheader("This table shows the rate of ozone depletion by sector in San Francisco")
     st.caption("The highlighted values demonstrate the areas of highest stratospheric ozone effect")
+    
     df = pd.DataFrame(np.random.randn(10, 20), columns=("Sector %d" % i for i in range(20)))
-
-
     st.dataframe(df.style.highlight_max(axis=0))
-
+    st.divider()
+    st.subheader("This is the map representation of the data)
     df = pd.DataFrame(
         np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
         columns=['lat', 'lon'])
     
     st.map(df)
-    chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
-    st.bar_chart(chart_data)
+
+    st.divider()
     expander = st.expander("See explanation")
     expander.write('''
         The chart above shows some numbers I picked for you.
