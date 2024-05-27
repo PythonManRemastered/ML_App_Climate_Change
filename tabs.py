@@ -44,7 +44,7 @@ with tab1:
     page_bg_img = '''
     <style>
     .stApp {
-    background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fphoto-background&psig=AOvVaw1pTAXwGIyO870eZfGc7btd&ust=1716889399990000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPj-i8jFrYYDFQAAAAAdAAAAABAU");
     background-size: cover;
     }
     </style>
