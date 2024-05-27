@@ -95,9 +95,9 @@ with tab4:
         np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
         columns=['lat', 'lon'])
     
-    chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
     st.map(df)
-    
+    chart_data = pd.DataFrame(np.random.randn(20, 3), columns=["a", "b", "c"])
+    st.bar_chart(chart_data)
     expander = st.expander("See explanation")
     expander.write('''
         The chart above shows some numbers I picked for you.
