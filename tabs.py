@@ -81,7 +81,7 @@ with tab2:
     
     st.latex(r'''
     NO + VOC + UV (sunlight) → Stratospheric Ozone (O3) 
-    '''
+    ''')
     
     
 
