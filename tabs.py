@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 from ultralytics import YOLO
 from PIL import Image
+import plotly.figure_factory as px
 
 
 st.set_page_config(layout="wide")
@@ -62,6 +63,24 @@ with tab2:
                 """                
 
 )
+    
+
+    df = px.data.gapminder()
+
+    fig = px.scatter(
+        df.query("year==2007"),
+        x="gdpPercap",
+        y="lifeExp",
+        size="pop",
+        color="continent",
+        hover_name="country",
+        log_x=True,
+        size_max=60,
+)
+
+    tab1, tab2 = st.tabs(["Streamlit theme (default)", "Plotly native theme"])
+    st.plotly_chart(fig, theme=None, use_container_width=True)
+
 
 
 with tab3:
