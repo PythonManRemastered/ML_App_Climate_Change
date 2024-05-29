@@ -80,7 +80,7 @@ with tab2:
     st.caption("The following are the chemical formulas for these reactions")
     
     st.latex(r'''
-    NO + VOC + UV (sunlight) → Stratospheric Ozone (O3) 
+    NO + VOC + UV (sunlight) → Ozone (O3) 
     ''')
     
     
