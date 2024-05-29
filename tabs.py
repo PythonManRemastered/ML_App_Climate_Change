@@ -63,6 +63,7 @@ with tab2:
                 """                
 
 )
+    st.warning("Remember: Ozone itself isn't always harmful to us; It is only harmful when it develops within the troposphere", icon ="⚠️")
 
 
 
