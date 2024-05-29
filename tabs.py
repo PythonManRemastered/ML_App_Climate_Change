@@ -52,6 +52,10 @@ with tab1:
     '''
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
+
+
+
+
 with tab2:
     st.title("Into the Stratosphere: Exploring Ozone Depletion and Atmospheric Dynamics")
     st.divider()
@@ -64,6 +68,12 @@ with tab2:
 
 )
     st.warning("Remember: Ozone itself isn't always harmful to us; It is only harmful when it develops within the troposphere", icon ="⚠️")
+    st.divider()
+    st.image('https://www.frontiersin.org/files/Articles/492681/fimmu-10-02518-HTML/image_m/fimmu-10-02518-g001.jpg')
+
+
+
+
 
 
 
@@ -84,9 +94,21 @@ with tab3:
     st.image('https://carbonneutral.com.au/wp-content/uploads/2022/04/sequestration-age-graph-1024x939.png')
     st.divider()
 
+
+
+
+
+
+
 with tab4:
     st.title("Hola!")
     
+
+
+
+
+
+
 
 with tab5:
     st.title("Some real examples behind Ozone Depletion")
@@ -154,6 +176,10 @@ with tab5:
         ],
     ))
     st.warning('This data is purely theoretical, and serves simply to show the typical behaviour of pollution levels in a qualitative, not quantitative manner', icon="⚠️")
+
+
+
+
 
 
 with tab6:
