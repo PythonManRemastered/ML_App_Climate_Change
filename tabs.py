@@ -63,14 +63,27 @@ with tab2:
     st.markdown("""
                 - The atmosphere is divided into several layers; The two we will discuss here are: **the Troposphere, and the Stratosphere**
                 - Tropospheric ozone is primarily caused by car exhaust emissions during traffic, which produce nitrogen oxides. **The development of tropospheric ozone is hazardous to humans** 
-                - Stratospheric ozone is naturally produced when solar radiation breaks down oxygen molecules in the atmosphere. **Stratospheric ozone protects us from UV radiation, and makes the Earth habitable** 
+                - Stratospheric ozone is naturally produced when solar radiation breaks down oxygen molecules in the atmosphere. **Stratospheric ozone protects us from UV radiation and makes the Earth habitable** 
                 """                
 
 )
-    st.warning("Remember: Ozone itself isn't always harmful to us; It is only harmful when it develops within the troposphere", icon ="⚠️")
+    st.warning("Remember: Ozone itself isn't always harmful to us; It is only harmful when it develops within the troposphere. When it forms in the troposphere, ozone is also referred to as a 'secondary pollutant'", icon ="⚠️")
     st.divider()
     st.image('https://www.frontiersin.org/files/Articles/492681/fimmu-10-02518-HTML/image_m/fimmu-10-02518-g001.jpg')
-
+    
+    st.markdown("""
+    Ozone can be formed in 2 primary ways: 
+     - Volatile organic compounds react with nitrogen oxides, which form peroxyacetyl nitrates, or PAN's, which act as powerful respiratory and eye irritants and ozone
+     - Nitrogen oxides are emitted from car exhaust pipes, which react with oxygen molecules to form ozone
+    """)
+    
+    st.caption("The following are the chemical formulas for these reactions")
+    
+    st.latex(r'''
+    NO + VOC + UV (sunlight) → Stratospheric Ozone (O3) 
+    '''
+    
+    
 
 
 
