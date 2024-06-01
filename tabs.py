@@ -116,22 +116,6 @@ with tab4:
     st.map(df)
 
     st.divider()
-    st.subheader("Ozone depletion in the Antarctic stratosphere over the past 3 years")
-    st.image('https://img.theweek.in/content/dam/week/news/2022/images/2022/12/21/Earth-ozone-hole-each-year-in-1979-(L)-and-in-2009.jpg')
-    expander = st.expander("See what this means")
-    expander.write('''
-    Despite the Montreal Protocol's success in regulating ozone-depleting chemicals,
-    the study raises concerns about the misperception that the ozone issue 
-    has been resolved. While the protocol has improved the situation with CFCs,
-    the ozone hole has reached record sizes in the past three years, 
-    covering over 26 million square kilometres in 2023, nearly twice the area of Antarctica.
-    The graph above shows an increase in the rate of ozone depletion in the past few years.
-    ''')
-    expander.write("On the other hand, various sources, notably NASA and 'The World Economic Forum', contrast this, showing that **the rate of ozone depletion has indeed continued to shrink since the introduction of the Montreal Protocol**")
-    expander.write("""Several other protocols have also been put into place to combat climate emissions, notably: **The Kyoto Protocol (and the Doha amendment), the Clean Air Act,
-                   and the Clean Water Act**
-                   """)
-    st.divider()
     
     chart_data = pd.DataFrame(
        np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
@@ -166,8 +150,25 @@ with tab4:
         ],
     ))
     st.warning('This data is purely theoretical, and serves simply to show the typical behaviour of pollution levels in a qualitative, not quantitative manner', icon="⚠️")
-
-
+    
+    st.divider()
+    st.subheader("Ozone depletion in the Antarctic stratosphere over the past 3 years")
+    st.image('https://img.theweek.in/content/dam/week/news/2022/images/2022/12/21/Earth-ozone-hole-each-year-in-1979-(L)-and-in-2009.jpg')
+    expander = st.expander("See what this means")
+    expander.write('''
+    Despite the Montreal Protocol's success in regulating ozone-depleting chemicals,
+    the study raises concerns about the misperception that the ozone issue 
+    has been resolved. While the protocol has improved the situation with CFCs,
+    the ozone hole has reached record sizes in the past three years, 
+    covering over 26 million square kilometres in 2023, nearly twice the area of Antarctica.
+    The graph above shows an increase in the rate of ozone depletion in the past few years.
+    ''')
+    expander.write("On the other hand, various sources, notably NASA and 'The World Economic Forum', contrast this, showing that **the rate of ozone depletion has indeed continued to shrink since the introduction of the Montreal Protocol**")
+    expander.write("""Several other protocols have also been put into place to combat climate emissions, notably: **The Kyoto Protocol (and the Doha amendment), the Clean Air Act,
+                   and the Clean Water Act**
+                   """)
+    st.divider()
+    
 with tab5:
     st.title("Understand how AI sees the world around us")
     @st.cache_resource
