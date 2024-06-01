@@ -5,6 +5,7 @@ import numpy as np
 from ultralytics import YOLO
 from PIL import Image
 import pydeck as pdk
+import time
 
 
 st.set_page_config(layout="wide")
@@ -206,6 +207,14 @@ with tab6:
         mod1 = load_model()
         res = mod1.predict(img)
         pred = res[0].probs.top1
+        progress_text = "Operation in progress. Please wait."
+        my_bar = st.progress(0, text=progress_text)
+        
+        for percent_complete in range(100):
+            time.sleep(0.01)
+            my_bar.progress(percent_complete + 1, text=progress_text)
+        time.sleep(1)
+        my_bar.empty()
         st.write(res[0].names[pred])
 
     st.subheader("This is the code for the project")
@@ -225,5 +234,6 @@ with tab6:
             pred = res[0].probs.top1
             st.write(res[0].names[pred])
             """)
+    
     st.warning("This, though a rudimentary model of large-scale image processing, which would use much more training data and computation power, displays how humans can use ML and satellite imaging to help improve our monitoring over areas rapdily changing due to global warming")
     
