@@ -191,10 +191,6 @@ with tab5:
     st.warning('This data is purely theoretical, and serves simply to show the typical behaviour of pollution levels in a qualitative, not quantitative manner', icon="⚠️")
 
 
-
-
-
-
 with tab6:
     st.title("Understand how AI sees the world around us")
     @st.cache_resource
@@ -212,3 +208,22 @@ with tab6:
         pred = res[0].probs.top1
         st.write(res[0].names[pred])
 
+    st.subheader("This is the code for the project")
+    st.code("""    
+        @st.cache_resource
+    def load_model():
+            mod = YOLO("best.pt")
+            return mod
+        
+        img = st.file_uploader("Upload an image to classify", type=["jpg", "png", "jpeg"])
+        
+        if img is not None:
+            img = Image.open(img)
+            st.image(img)
+            mod1 = load_model()
+            res = mod1.predict(img)
+            pred = res[0].probs.top1
+            st.write(res[0].names[pred])
+            """)
+    st.warning("This, though a rudimentary model of large-scale image processing, which would use much more training data and computation power, displays how humans can use ML and satellite imaging to help improve our monitoring over areas rapdily changing due to global warming
+    
