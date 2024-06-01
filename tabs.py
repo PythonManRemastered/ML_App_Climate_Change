@@ -56,6 +56,9 @@ with tab2:
     """
 )
 
+    st.subheader("Let's watch this video to learn more about federal incentives regarding carbon credits")
+    VIDEO_URL = "https://www.youtube.com/watch?v=x_wzGPKIBp4"
+    st.video(VIDEO_URL)
     st.divider()
     st.subheader("Emmisions have changed exponentially over the past 4 decades")
     col1, col2, col3 = st.columns(3)
