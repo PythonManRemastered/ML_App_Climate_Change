@@ -9,7 +9,7 @@ import time
 
 
 st.set_page_config(layout="wide")
-tab1, tab2, tab3, tab4, tab5, tab6= st.tabs(["Carbon Credits", "Ozone Depletion", "Implementation", "Government Protocols", "Effects IRL", "Understand the ML"])
+tab1, tab2, tab3, tab4, tab5= st.tabs(["Carbon Credits", "Ozone Depletion", "Implementation", "Effects IRL", "Understand the ML"])
 with st.sidebar:
     st.title("To learn more and help the cause")
     st.link_button("Donate to the Environmental \n Defense Fund", "https://www.edf.org/")
@@ -54,9 +54,6 @@ with tab1:
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
 
-
-
-
 with tab2:
     st.title("Into the Stratosphere: Exploring Ozone Depletion and Atmospheric Dynamics")
     st.divider()
@@ -85,12 +82,6 @@ with tab2:
     ''')
     
     
-
-
-
-
-
-
 with tab3:
     st.title("The way we understand carbon credits has changed over the years")
     st.subheader("Carbon sequestration (per unit time by an average healthy tree) is not bound by a single formula, hence we"
@@ -109,22 +100,7 @@ with tab3:
     st.divider()
 
 
-
-
-
-
-
 with tab4:
-    st.title("Hola!")
-    
-
-
-
-
-
-
-
-with tab5:
     st.title("Some real examples behind Ozone Depletion")
     st.subheader("This table shows the rate of ozone depletion by sector in San Francisco")
     st.caption("The highlighted values demonstrate the areas of highest stratospheric ozone effect")
@@ -192,7 +168,7 @@ with tab5:
     st.warning('This data is purely theoretical, and serves simply to show the typical behaviour of pollution levels in a qualitative, not quantitative manner', icon="⚠️")
 
 
-with tab6:
+with tab5:
     st.title("Understand how AI sees the world around us")
     @st.cache_resource
     def load_model():
@@ -239,4 +215,3 @@ with tab6:
             """)
     
     st.warning("This, though a rudimentary model of large-scale image processing, which would use much more training data and computation power, displays how humans can use ML and satellite imaging to help improve our monitoring over areas rapdily changing due to global warming")
-    
