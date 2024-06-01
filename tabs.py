@@ -33,7 +33,7 @@ with tab1:
     st.image('https://www.frontiersin.org/files/Articles/492681/fimmu-10-02518-HTML/image_m/fimmu-10-02518-g001.jpg')
     
     st.markdown("""
-    Ozone can be formed in 2 primary ways: 
+    ***Ozone can be formed in 2 primary ways:*** 
      - Volatile organic compounds react with nitrogen oxides, which form peroxyacetyl nitrates, or PAN's, which act as powerful respiratory and eye irritants and ozone
      - Nitrogen oxides are emitted from car exhaust pipes, which react with oxygen molecules to form ozone
     """)
@@ -50,8 +50,8 @@ with tab2:
     st.subheader("What are carbon credits?")
     st.markdown(
     """
-    - Carbon credits are a new perspective on the methods we use to reduce greenhouse gas emmisions
-    - Today, many countries, like: Canada, China, Japan, New Zealand, South Korea, Switzerland and the United States use this to effectively combat the effects of climate change 
+    - Carbon credits are a new perspective on the methods we use to reduce greenhouse gas emissions
+    - Today, many countries, like ***Canada, China, Japan, New Zealand, South Korea, Switzerland and the United States use this to combat the effects of climate change effectively*** 
     - While they have been controversial at times, they are generally seen as an effective tool for reducing carbon emissions and encouraging the adoption of cleaner, more sustainable forms of energy
     """
 )
@@ -60,9 +60,9 @@ with tab2:
     VIDEO_URL = "https://www.youtube.com/watch?v=x_wzGPKIBp4"
     st.video(VIDEO_URL)
     st.divider()
-    st.subheader("Emmisions have changed exponentially over the past 4 decades")
+    st.subheader("Emissions have changed exponentially over the past 4 decades")
     col1, col2, col3 = st.columns(3)
-    col1.metric(label="Average Sufrace Temperature", value = "70 °F", delta = "12% increase from 1980")
+    col1.metric(label="Average Surface Temperature", value = "70 °F", delta = "12% increase from 1980")
     col2.metric(label="Sea Level", value = "10 cm", delta = "3cm increase from 1980")
     col3.metric(label="Use of Fossil Fuels", value = "178 billion gallons", delta = "7.8% increase from 1980 ")
     st.divider()
