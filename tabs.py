@@ -207,7 +207,7 @@ with tab6:
         mod1 = load_model()
         res = mod1.predict(img)
         pred = res[0].probs.top1
-        progress_text = "Operation in progress. Please wait."
+        progress_text = "Wait up! The classifier is doing its work"
         my_bar = st.progress(0, text=progress_text)
         
         for percent_complete in range(100):
@@ -215,6 +215,8 @@ with tab6:
             my_bar.progress(percent_complete + 1, text=progress_text)
         time.sleep(1)
         my_bar.empty()
+
+        st.button("Want to try again? Click me!")
         st.write(res[0].names[pred])
 
     st.subheader("This is the code for the project")
