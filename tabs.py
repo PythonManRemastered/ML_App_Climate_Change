@@ -12,6 +12,7 @@ st.set_page_config(layout="wide")
 tab1, tab2, tab3, tab4, tab5= st.tabs(["Ozone Depletion", "Carbon Credits", "Implementation", "Effects IRL", "Understand the ML"])
 with st.sidebar:
     st.title("To learn more and help the cause")
+    st.subheader("This app is deployed using Streamlit, and owned by Aadi C. of the British School")
     st.link_button("Donate to the Environmental \n Defense Fund", "https://www.edf.org/")
     st.link_button("Read about how you can reduce your own \n carbon footprint ", "https://sustainability.georgetown.edu/community-engagement/things-you-can-do/")
     st.link_button("Watch this video to learn \n more about carbon credits", "https://www.youtube.com/watch?v=bYb7YLsXvzg")
