@@ -225,5 +225,5 @@ with tab6:
             pred = res[0].probs.top1
             st.write(res[0].names[pred])
             """)
-    st.warning("This, though a rudimentary model of large-scale image processing, which would use much more training data and computation power, displays how humans can use ML and satellite imaging to help improve our monitoring over areas rapdily changing due to global warming
+    st.warning("This, though a rudimentary model of large-scale image processing, which would use much more training data and computation power, displays how humans can use ML and satellite imaging to help improve our monitoring over areas rapdily changing due to global warming")
     
