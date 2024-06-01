@@ -47,15 +47,6 @@ with tab1:
 with tab2:
     st.title("Carbon Credits: A new way to combat climate change")
     st.divider()
-    st.subheader("What are carbon credits?")
-    st.markdown(
-    """
-    - Carbon credits are a new perspective on the methods we use to reduce greenhouse gas emissions
-    - Today, many countries, like ***Canada, China, Japan, New Zealand, South Korea, Switzerland and the United States use this to combat the effects of climate change effectively*** 
-    - While they have been controversial at times, they are generally seen as an effective tool for reducing carbon emissions and encouraging the adoption of cleaner, more sustainable forms of energy
-    """
-)
-    st.divider() # metrics tables
     st.subheader("Emissions have changed exponentially over the past 4 decades")
     col1, col2, col3 = st.columns(3)
     col1.metric(label="Average Surface Temperature", value = "70 °F", delta = "12% increase from 1980")
@@ -71,6 +62,16 @@ with tab2:
     </style>
     '''
     st.markdown(page_bg_img, unsafe_allow_html=True)
+    st.divider()
+    st.subheader("What are carbon credits?")
+    st.markdown(
+    """
+    - Carbon credits are a new perspective on the methods we use to reduce greenhouse gas emissions
+    - Today, many countries, like ***Canada, China, Japan, New Zealand, South Korea, Switzerland and the United States use this to combat the effects of climate change effectively*** 
+    - While they have been controversial at times, they are generally seen as an effective tool for reducing carbon emissions and encouraging the adoption of cleaner, more sustainable forms of energy
+    """
+)
+
     st.divider() # video player for federal incentives for carbon credits
     st.subheader("Let's watch this video to learn more about federal incentives regarding carbon credits")
     VIDEO_URL = "https://www.youtube.com/watch?v=x_wzGPKIBp4"
