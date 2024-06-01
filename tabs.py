@@ -55,11 +55,7 @@ with tab2:
     - While they have been controversial at times, they are generally seen as an effective tool for reducing carbon emissions and encouraging the adoption of cleaner, more sustainable forms of energy
     """
 )
-    st.divider()
-    st.subheader("Let's watch this video to learn more about federal incentives regarding carbon credits")
-    VIDEO_URL = "https://www.youtube.com/watch?v=x_wzGPKIBp4"
-    st.video(VIDEO_URL)
-    st.divider()
+    st.divider() # metrics tables
     st.subheader("Emissions have changed exponentially over the past 4 decades")
     col1, col2, col3 = st.columns(3)
     col1.metric(label="Average Surface Temperature", value = "70 °F", delta = "12% increase from 1980")
@@ -75,6 +71,11 @@ with tab2:
     </style>
     '''
     st.markdown(page_bg_img, unsafe_allow_html=True)
+    st.divider() # video player for federal incentives for carbon credits
+    st.subheader("Let's watch this video to learn more about federal incentives regarding carbon credits")
+    VIDEO_URL = "https://www.youtube.com/watch?v=x_wzGPKIBp4"
+    st.video(VIDEO_URL)
+
 
     
 with tab3:
