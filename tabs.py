@@ -190,7 +190,7 @@ with tab5:
 
         st.button("Want to try again? Click me!")
         x = res[0].names[pred] 
-        st.write("Your image is classified as a ***{}***".format(res[0].names[pred]))
+        st.write("Your image is classified under the field: ***{}***".format(res[0].names[pred]))
 
     st.subheader("This is the code for the project")
     st.code("""    
