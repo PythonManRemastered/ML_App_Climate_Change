@@ -55,15 +55,7 @@ with tab2:
     - While they have been controversial at times, they are generally seen as an effective tool for reducing carbon emissions and encouraging the adoption of cleaner, more sustainable forms of energy
     """
 )
-    st.subheader("This is how carbon credits are employed considering C02 emmisions ppm")
 
-    chart_data = pd.DataFrame(
-   {"col1": list(range(20)), "col2": np.random.randn(20), "col3": np.random.randn(20)}
-    )
-
-    st.bar_chart(
-    chart_data, x="col1", y=["col2", "col3"], color=["#FF0000", "#0000FF"]
-    )
     st.divider()
     st.subheader("Emmisions have changed exponentially over the past 4 decades")
     col1, col2, col3 = st.columns(3)
