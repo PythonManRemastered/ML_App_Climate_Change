@@ -55,7 +55,7 @@ with tab2:
     - While they have been controversial at times, they are generally seen as an effective tool for reducing carbon emissions and encouraging the adoption of cleaner, more sustainable forms of energy
     """
 )
-
+    st.divider()
     st.subheader("Let's watch this video to learn more about federal incentives regarding carbon credits")
     VIDEO_URL = "https://www.youtube.com/watch?v=x_wzGPKIBp4"
     st.video(VIDEO_URL)
