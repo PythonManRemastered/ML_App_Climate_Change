@@ -108,14 +108,13 @@ with tab4:
     df = pd.DataFrame(np.random.randn(10, 20), columns=("Sector %d" % i for i in range(20)))
     st.dataframe(df.style.highlight_max(axis=0))
     st.divider()
-    st.subheader("This is the map representation of the data")
+    
+    st.subheader("These are map representations of the data")
     df = pd.DataFrame(
         np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
         columns=['lat', 'lon'])
     
     st.map(df)
-
-    st.divider()
     
     chart_data = pd.DataFrame(
        np.random.randn(1000, 2) / [50, 50] + [37.76, -122.4],
