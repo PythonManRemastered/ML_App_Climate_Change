@@ -149,7 +149,7 @@ with tab4:
             ),
         ],
     ))
-    st.warning('This data is purely theoretical, and serves simply to show the typical behaviour of pollution levels in a qualitative, not quantitative manner', icon="⚠️")
+    st.warning('This data is not exact, and shows the typical behaviour of pollution levels in a qualitative, not quantitative manner', icon="⚠️")
     
     st.divider()
     st.subheader("Ozone depletion in the Antarctic stratosphere over the past 3 years")
