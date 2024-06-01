@@ -16,7 +16,35 @@ with st.sidebar:
     st.link_button("Read about how you can reduce your own \n carbon footprint ", "https://sustainability.georgetown.edu/community-engagement/things-you-can-do/")
     st.link_button("Watch this video to learn \n more about carbon credits", "https://www.youtube.com/watch?v=bYb7YLsXvzg")
 # the stuff above this comment should not be touched since it serves as the backbone to the functions of the website
+
 with tab1:
+    st.title("Into the Stratosphere: Exploring Ozone Depletion and Atmospheric Dynamics")
+    st.divider()
+    st.subheader("What is stratopheric ozone?")
+    st.markdown("""
+                - The atmosphere is divided into several layers; The two we will discuss here are: **the Troposphere, and the Stratosphere**
+                - Tropospheric ozone is primarily caused by car exhaust emissions during traffic, which produce nitrogen oxides. **The development of tropospheric ozone is hazardous to humans** 
+                - Stratospheric ozone is naturally produced when solar radiation breaks down oxygen molecules in the atmosphere. **Stratospheric ozone protects us from UV radiation and makes the Earth habitable** 
+                """                
+
+)
+    st.warning("Remember: Ozone itself isn't always harmful to us; It is only harmful when it develops within the troposphere. When it forms in the troposphere, ozone is also referred to as a 'secondary pollutant'", icon ="⚠️")
+    st.divider()
+    st.image('https://www.frontiersin.org/files/Articles/492681/fimmu-10-02518-HTML/image_m/fimmu-10-02518-g001.jpg')
+    
+    st.markdown("""
+    Ozone can be formed in 2 primary ways: 
+     - Volatile organic compounds react with nitrogen oxides, which form peroxyacetyl nitrates, or PAN's, which act as powerful respiratory and eye irritants and ozone
+     - Nitrogen oxides are emitted from car exhaust pipes, which react with oxygen molecules to form ozone
+    """)
+    
+    st.caption("The following are the chemical formulas for these reactions")
+    
+    st.latex(r'''
+    NO + VOC + UV (sunlight) → Ozone (O3) 
+    ''')
+    
+with tab2:
     st.title("Carbon Credits: A new way to combat climate change")
     st.divider()
     st.subheader("What are carbon credits?")
@@ -53,34 +81,6 @@ with tab1:
     '''
     st.markdown(page_bg_img, unsafe_allow_html=True)
 
-
-with tab2:
-    st.title("Into the Stratosphere: Exploring Ozone Depletion and Atmospheric Dynamics")
-    st.divider()
-    st.subheader("What is stratopheric ozone?")
-    st.markdown("""
-                - The atmosphere is divided into several layers; The two we will discuss here are: **the Troposphere, and the Stratosphere**
-                - Tropospheric ozone is primarily caused by car exhaust emissions during traffic, which produce nitrogen oxides. **The development of tropospheric ozone is hazardous to humans** 
-                - Stratospheric ozone is naturally produced when solar radiation breaks down oxygen molecules in the atmosphere. **Stratospheric ozone protects us from UV radiation and makes the Earth habitable** 
-                """                
-
-)
-    st.warning("Remember: Ozone itself isn't always harmful to us; It is only harmful when it develops within the troposphere. When it forms in the troposphere, ozone is also referred to as a 'secondary pollutant'", icon ="⚠️")
-    st.divider()
-    st.image('https://www.frontiersin.org/files/Articles/492681/fimmu-10-02518-HTML/image_m/fimmu-10-02518-g001.jpg')
-    
-    st.markdown("""
-    Ozone can be formed in 2 primary ways: 
-     - Volatile organic compounds react with nitrogen oxides, which form peroxyacetyl nitrates, or PAN's, which act as powerful respiratory and eye irritants and ozone
-     - Nitrogen oxides are emitted from car exhaust pipes, which react with oxygen molecules to form ozone
-    """)
-    
-    st.caption("The following are the chemical formulas for these reactions")
-    
-    st.latex(r'''
-    NO + VOC + UV (sunlight) → Ozone (O3) 
-    ''')
-    
     
 with tab3:
     st.title("The way we understand carbon credits has changed over the years")
