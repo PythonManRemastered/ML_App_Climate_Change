@@ -217,7 +217,8 @@ with tab6:
         my_bar.empty()
 
         st.button("Want to try again? Click me!")
-        st.write(res[0].names[pred])
+        x = res[0].names[pred] 
+        st.write("Your image is classified as {}".format(res[0].names[pred]))
 
     st.subheader("This is the code for the project")
     st.code("""    
