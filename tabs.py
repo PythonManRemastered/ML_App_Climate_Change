@@ -46,12 +46,12 @@ with tab1:
     
 with tab2:
     st.title("Carbon Credits: A new way to combat climate change")
+    st.divider()
     st.subheader("Emissions have changed exponentially over the past 4 decades")
     col1, col2, col3 = st.columns(3)
     col1.metric(label="Average Surface Temperature", value = "70 °F", delta = "12% increase from 1980")
     col2.metric(label="Sea Level", value = "10 cm", delta = "3cm increase from 1980")
     col3.metric(label="Use of Fossil Fuels", value = "178 billion gallons", delta = "7.8% increase from 1980 ")
-    st.divider()
     page_bg_img = '''
     <style>
     .stApp {
